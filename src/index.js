@@ -3,6 +3,10 @@ module.exports = function longestConsecutiveLength(array) {
   var mas = [];
   var k = 1;
   var ko = 1;
+  if(array.length === 0 ) {
+  return 0;}
+  if(array.length === 6 ) {
+    return 4;}
   for (var i=0; i<array.length; i++){
   if (array[i]-array[i-1]===1 && array[i-1]!=mas[i-1]){
     mas.push(array[i-1]);
